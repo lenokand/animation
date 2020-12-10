@@ -1,7 +1,6 @@
 body{
     background-color: rgb(198, 214, 183);
-    /* max-width: 1200px;
-    max-height: 900px; */
+    padding: 50px;
 }
 .border{
     margin: auto;
