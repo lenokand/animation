@@ -1,13 +1,23 @@
 body{
     background-color: rgb(198, 214, 183);
-    padding: 50px;
+    padding: 50px 200px 200px 50px;
+}
+.container{
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 0 150px 150px 0;
+    max-width: 1400px;
+    min-height: 600px;
+    background-color: rgba(206, 197, 200, 0.74);
+
 }
 .border{
     margin: auto;
     /* padding:50px; */
+    width: calc(100%-250px);
     position: relative;
-    width: 800px;
-    height: 600px;
+    max-width: 1400px;
+    min-height: 600px;
     /* border: 1px solid #fff; */
 }
 .block {
@@ -28,12 +38,56 @@ body{
     top: 0;
     left: 0;
 }
+.seen{
+    background-color: rgb(153, 67, 67);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 100%;
+    left: 100%;
+    border-radius: 50%;
+    animation-name: myAnimation2;
+    animation-duration: 7000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+   
+}
+
+
+@keyframes myAnimation2{
+    5%, 99% {
+        background-color:rgb(153, 67, 67);
+        top: 100%;
+        left: 100%;
+      
+    }
+    25%, 35%  {
+        background-color:rgb(153, 54, 54);
+        top: 0;
+        left: 100%;
+        
+    }
+    59%, 66% {
+        background-color:rgb(41, 5, 5);
+        top: 100%;
+        left: 0;
+        
+    }
+    72%, 86%{
+        background-color:rgb(229, 155, 155);
+        top: 0;
+        left: 0;
+    }
+}
+
+
 
 @keyframes myAnimation {
     10%, 99% {
         background-color: #f1542d;
         border-radius: 50%;
-        border: 25px solid #f1542d91;
+        border: 25px solid #5e211291;
         top: 0;
         left: 0;
         transform: rotate(-180deg);
@@ -43,24 +97,26 @@ body{
     {
         border-radius: 10%;
         background-color: #4ad327;
-        border: 25px solid #49d327cb;
+        border: 25px solid #19470eb2;
         top: 0;
         left: 100%;
         transform: rotate(360deg);
-
+        /* margin-left:-150px ; */
+        /* margin-top:-150px; */
     }
     50%, 70% {
         border-radius: 50%;
         background-color: #103fda;
-        border: 15px solid #103fda71;
+        border: 15px solid #11205265;
         top:100%;
         left: 100%;
         transform: rotate(-180deg);
+        /* margin-top:-150px; */
             }
     80%, 90% {
         border-radius: 10%;
         background-color: #b122aa;
-        border: 25px solid #b80eb093;
+        border: 25px solid #461a4334;
         
         top: 100%;
         left: 0;
