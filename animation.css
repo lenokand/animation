@@ -7,7 +7,7 @@ body{
     border: 1px solid #fff;
     padding: 0 150px 150px 0;
     max-width: 1400px;
-    min-height: 600px;
+    min-height: 50vh;
     background-color: rgba(206, 197, 200, 0.74);
 
 }
@@ -17,7 +17,7 @@ body{
     width: calc(100%-250px);
     position: relative;
     max-width: 1400px;
-    min-height: 600px;
+    min-height: 50vh;
     /* border: 1px solid #fff; */
 }
 .block {
